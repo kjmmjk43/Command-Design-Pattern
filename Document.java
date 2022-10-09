@@ -3,27 +3,27 @@ import java.util.ArrayList;
 public class Document {
 
     private String fileName;
-    private ArrayList<String> lines =new ArrayList();
+    private ArrayList<String> lines = new ArrayList();
 
     public void Document(String fileName) {
 
     }
 
     public String view() {
-        return " ";
+        return "-----\n\n----- ";//for every item in append add a | 
     }
     
-    public String append() {
-        return " ";
+    public String append(String line) {
+        return "The line has been appended by the document. ";
 
     }
 
-    public String write() {
-        return " ";
+    public String write(String line) {
+        return "The line was written to the files.";
     }
 
     public String save() {
-        return " ";
+        return "The file has been saved. ";
     }
     
 }
