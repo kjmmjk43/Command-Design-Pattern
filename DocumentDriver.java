@@ -10,7 +10,7 @@ public class DocumentDriver {
 		String docName = getInputLine("Enter document name", in);
 		Document document = new Document(docName);
 		InputHandler inHandler = new InputHandler(document);
-
+		
 		while(true) {
 			String command = getInputLine("Enter Command", in);
 			if(command.contentEquals("quit"))break;

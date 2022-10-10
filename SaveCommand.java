@@ -1,11 +1,15 @@
-public class SaveCommand {
+public class SaveCommand extends Command{
 
-    public void SaveCommand(Document doc) {
-        
+    public SaveCommand(Document doc) 
+    {
+       super(doc);
+       this.execute();
     }
 
-    public String excute(){
-        return " ";
+    public String excute()
+    {
+        //returns if document was saved correctly or not
+        return this.document.save();
     }
     
 }

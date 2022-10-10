@@ -1,11 +1,15 @@
-public class ViewCommand {
+public class ViewCommand extends Command{
 
-    public ViewCommand(Document doc) {
-
+    public ViewCommand(Document doc) 
+    {
+        super(doc);
+        this.execute();
     }
 
-    public String excute(){
-        return " ";
+    public String excute()
+    {
+        //returns the view method of the document.
+        return this.document.view();
     }
     
 }

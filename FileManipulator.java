@@ -1,5 +1,4 @@
 
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,8 +8,8 @@ import java.util.Scanner;
 public class FileManipulator {
 
 	public static ArrayList<String> readFile(String fileName) {
-		ArrayList<String> lines = new ArrayList<>();
 
+		ArrayList<String> lines = new ArrayList<>();
 		try {
 			File file = new File(fileName);
 
@@ -33,6 +32,7 @@ public class FileManipulator {
 	}
 
 	public static boolean writeFile(String fileName, ArrayList<String> lines) {
+		
 		try {
 			FileWriter writer = new FileWriter(fileName);
 			for (String line : lines) {
