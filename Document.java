@@ -3,8 +3,16 @@ import java.util.ArrayList;
 public class Document {
 
     private String fileName;
+<<<<<<< HEAD
 
     private ArrayList<String> lines;
+=======
+<<<<<<< HEAD
+    private ArrayList<String> lines = new ArrayList();
+=======
+    private ArrayList<String> lines;
+>>>>>>> db5a6da826c6cc042343bf9f38b0205c44c55207
+>>>>>>> 315a41f290faed6514459895837f850308d6a2b2
 
     public Document(String fileName) {
 
@@ -13,7 +21,26 @@ public class Document {
     }
 
     public String view() {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+        return "-----\n\n----- ";//for every item in append add a | 
+    }
+    
+    public String append(String line) {
+        return "The line has been appended by the document. ";
+
+    }
+
+    public String write(String line) {
+        return "The line was written to the files.";
+    }
+
+    public String save() {
+        return "The file has been saved. ";
+=======
+>>>>>>> 315a41f290faed6514459895837f850308d6a2b2
         String file = "";
 
         //assigns entire file to one string and then returns it
@@ -51,7 +78,11 @@ public class Document {
             return "The file has been saved.";
         }
         return "There was an error saving the file.";
+<<<<<<< HEAD
 
+=======
+>>>>>>> db5a6da826c6cc042343bf9f38b0205c44c55207
+>>>>>>> 315a41f290faed6514459895837f850308d6a2b2
     }
     
 }
