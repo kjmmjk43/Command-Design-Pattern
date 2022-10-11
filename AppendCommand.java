@@ -9,41 +9,17 @@ public class AppendCommand extends Command{
     public AppendCommand(Document doc) 
     {
         super(doc);
-        //prints message for what the user should do.
-        this.excute();
-       // doc.append(in.next());
-        
     }
     
+     /*
+     * Asks user "what would you like to append to the file?" 
+     * this is the reason for the scanner variable
+     */
     public String excute()
     {
         System.out.println("Enter Text: ");
-
-        //appends entered data to the file.
+        //appends entered data to the end of the file.
         return this.document.append(in.next());
     }
 
 }
-
-
-/*
-     * public void AppendCommandCommand(Document doc) 
-    {
-        System.out.println("Enter Text: ");
-        doc.append(in.nextLine());
-        
-    }
-    
-    public String excute()
-    {
-        /*
-         * Asks user "what would you like to append to the file?" 
-         * this is the reason for the scanner variable
-         */
-
-        // System.out.println("Enter Text: ");
-        // doc.append(in.nextLine());
-
-        //return in.nextLine();
-      //  return "";
-  //  }

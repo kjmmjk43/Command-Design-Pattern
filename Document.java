@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Document {
 
     private String fileName;
+
     private ArrayList<String> lines;
 
     public Document(String fileName) {
@@ -12,14 +13,15 @@ public class Document {
     }
 
     public String view() {
+
         String file = "";
 
-        //assigns entire file to one string and returns it
+        //assigns entire file to one string and then returns it
         for(int i = 0; i < lines.size(); i++)
         {
             file = lines.get(i) + "\n";
         }
-
+        
         return file;
     }
     
@@ -32,7 +34,7 @@ public class Document {
 
     public String write(String line) 
     {
-        //reintitalizes lines to nothing so that it can be overwritten
+        //reinitializes lines to nothing so that it can be overwritten
         this.lines = new ArrayList<String>();
 
         //adds the string to the file
@@ -49,6 +51,7 @@ public class Document {
             return "The file has been saved.";
         }
         return "There was an error saving the file.";
+
     }
     
 }

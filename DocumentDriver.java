@@ -13,7 +13,9 @@ public class DocumentDriver {
 		
 		while(true) {
 			String command = getInputLine("Enter Command", in);
+
 			if(command.contentEquals("quit"))break;
+			
 			inHandler.inputEntered(command);
 		}
 		
